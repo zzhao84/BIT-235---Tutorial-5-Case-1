@@ -49,7 +49,6 @@ article {
 */
 
 @media screen and (max-width: 480px) {
-	
 	img.panel {
 		width: 100%;
 	}
@@ -97,6 +96,6 @@ article {
 	img.size4 {
 		width: 30%;
 	}
-	
+}
 	
 
