@@ -25,8 +25,22 @@
 
 /* Flex Layout Styles */
 
+body {
+	display: flex;
+	flex-flow: row wrap;
+}
 
+section#sheet {
+	flex-basis: 301px;
+	flex-grow: 3;
+	flex-shrink: 1;
+}
 
+article {
+	flex-basis: 180px;
+	flex-grow: 1;
+	flex-srhink 3;
+}
 
 
 /* ============================================
@@ -34,11 +48,55 @@
    ============================================
 */
 
-
+@media screen and (max-width: 480px) {
+	
+	img.panel {
+		width: 100%;
+	}
+	
+	nav.horizontal {
+		order: 99;
+	}
+	
+	body footer {
+		order: 100;
+	}
+}
+		
 
 
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+
+@media screen and (min-width: 481px) {
+
+	nav.horizontal ul {
+		display: flex;
+		flex-flow: row nowrap;
+		height: 40px;
+	}
+	
+	nav.horiztonal ul > li {
+		flex: 1 1 auto;
+	}
+	
+	img.size1 {
+		width: 100%;
+	}
+		
+	img.size2 {
+		width: 60%;
+	}
+	
+	img.size3 {
+		width: 40%;
+	}
+	
+	img.size4 {
+		width: 30%;
+	}
+	
+	
 
